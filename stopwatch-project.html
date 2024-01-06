@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Stopwatch</title>
+    <style>
+      body {
+        background-color: rgb(10, 10, 10);
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .clock {
+        margin-top: 200px;
+        color: white;
+        font-size: 60px;
+      }
+      
+      .button-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        gap: 170px;
+      }
+
+
+      .lap-but, .reset-but {
+        background-color: rgb(123, 118, 118);
+        color: white;
+        border-radius: 35px;
+        height: 70px;
+        width: 70px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .start-but {
+      background-color: rgb(24, 79, 24);
+      color: rgb(91, 228, 91);
+      border-radius: 35px;
+      height: 70px;
+      width: 70px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .pause {
+      background-color: rgb(72, 13, 13);
+      color: rgb(240, 69, 69);
+      border-radius: 35px;
+      height: 70px;
+      width: 70px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .first-row, .second-row, .three-row, .four-row, .five-row {
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    .second-row {
+      color: rgb(91, 228, 91);;
+    }
+    
+    .four-row {
+      color: rgb(240, 69, 69);;
+    }
+
+    .lap-cont {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    </style>
+  </head>
+  <body>
+  <div class="clock js-clock">00:00,00</div>
+
+  <div class="button-container">
+    <button class="lap-but">Lap</button>
+    <button class="start-but js-start">Start</button>
+  </div>
+  <div class="lap-cont">
+    <div>
+      <div class="first-row lap-time"></div>
+    </div>
+  
+    <div>
+      <div class="second-row lap-time"></div>
+    </div>
+
+    <div>
+      <div class="three-row lap-time"></div>
+    </div>
+
+    <div>
+      <div class="four-row lap-time"></div>
+    </div>
+  
+    <div>
+      <div class="five-row lap-time"></div>
+    </div>
+  
+</div>
+    <script src="stopwatch.js"></script>
+
+  </body>
+</html>
